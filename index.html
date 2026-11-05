@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>The Bishops Brew — Coffee &amp; Food on Queen Street East</title>
+  <meta name="description" content="Crafted espresso, gourmet grilled cheeses, and local bites on Queen Street East, Cambridge, Ontario." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            cream: '#f6f1e7',
+            paper: '#fffcf5',
+            ink: '#1c1614',
+            espresso: '#211915',
+            mocha: '#7a563f',
+            muted: '#7d6f66',
+            line: '#e2d9cb',
+            gold: '#d6a36a',
+          },
+          fontFamily: {
+            serif: ['"Cormorant Garamond"', 'Georgia', 'serif'],
+            sans: ['"DM Sans"', 'system-ui', 'sans-serif'],
+          },
+        },
+      },
+    };
+  </script>
+  <style>
+    .bishop-icon {
+      -webkit-mask: url('https://cdn.jsdelivr.net/npm/@tabler/icons@3.19.0/icons/outline/chess-bishop.svg') center / contain no-repeat;
+      mask: url('https://cdn.jsdelivr.net/npm/@tabler/icons@3.19.0/icons/outline/chess-bishop.svg') center / contain no-repeat;
+      background-color: currentColor;
+    }
+  </style>
+</head>
+<body class="bg-cream font-sans text-ink antialiased">
+
+  <!-- Header -->
+  <header class="border-b border-line bg-cream">
+    <div class="mx-auto flex max-w-6xl items-center justify-between px-6 py-5 md:px-8">
+      <a href="#" class="flex items-center gap-3">
+        <span class="bishop-icon h-7 w-7 text-mocha" aria-hidden="true"></span>
+        <span class="font-serif text-2xl font-medium">The Bishops Brew</span>
+      </a>
+      <nav aria-label="Main">
+        <ul class="flex items-center gap-5 text-xs font-semibold md:gap-7">
+          <li><a href="#story" class="hover:text-mocha">Our story</a></li>
+          <li><a href="#menu" class="hover:text-mocha">Menu</a></li>
+          <li><a href="#visit" class="hover:text-mocha">Visit us</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="mx-auto flex max-w-6xl flex-col items-center gap-12 px-6 py-14 md:flex-row md:gap-16 md:px-8 md:py-20">
+      <div class="flex-1">
+        <p class="text-[11px] font-bold uppercase tracking-wide">Queen Street East · Cambridge, ON</p>
+        <h1 class="mt-6 font-serif text-5xl font-medium leading-[1.02] md:text-6xl lg:text-7xl text-balance">
+          Your Next Strategic Stop for Great Coffee &amp; Food.
+        </h1>
+        <p class="mt-8 max-w-md text-sm leading-relaxed text-muted">
+          Crafted espresso, gourmet grilled cheeses, and local bites on Queen Street East.
+        </p>
+        <div class="mt-6 flex gap-3">
+          <a href="#menu" class="rounded-sm bg-mocha px-5 py-3 text-xs font-semibold text-paper hover:bg-[#6a4a36]">Explore Menu</a>
+          <a href="#visit" class="rounded-sm border border-ink px-5 py-3 text-xs font-semibold hover:bg-ink hover:text-cream">Find Us</a>
+        </div>
+        <p class="mt-6 text-[11px] font-bold uppercase tracking-wide text-muted">A little strategy. A lot of comfort.</p>
+      </div>
+      <div class="w-full max-w-sm flex-1 md:max-w-none">
+        <img src="./img/hero.png" alt="A latte with leaf art beside a golden grilled cheese sandwich and a wooden chess bishop on a walnut table"
+             class="aspect-[4/5] w-full rounded-b-lg rounded-t-[6rem] object-cover" />
+      </div>
+    </section>
+
+    <!-- Story band -->
+    <section id="story" class="bg-espresso text-cream">
+      <div class="mx-auto flex max-w-6xl flex-col gap-10 px-6 py-16 md:flex-row md:items-center md:px-8">
+        <div class="flex flex-1 items-center gap-10">
+          <span class="bishop-icon h-16 w-16 shrink-0 text-gold" aria-hidden="true"></span>
+          <h2 class="font-serif text-4xl font-medium leading-tight md:text-[2.6rem]">Good things happen across the table.</h2>
+        </div>
+        <div class="flex-1">
+          <p class="text-[11px] font-bold uppercase tracking-wide text-gold">Strategic flavor. Everyday comfort.</p>
+          <p class="mt-3 text-sm leading-relaxed text-cream/85">
+            A perfectly pulled espresso. A golden, gloriously melty grilled cheese. A familiar face across the board. We&apos;re your neighbourhood spot to slow down, settle in, and make your next great connection.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Menu -->
+    <section id="menu" class="mx-auto max-w-6xl px-6 py-16 md:px-8 md:py-20">
+      <p class="text-[11px] font-bold uppercase tracking-wide text-muted">The opening moves</p>
+      <h2 class="mt-5 font-serif text-4xl font-medium md:text-5xl">A winning combination.</h2>
+      <p class="mt-5 text-sm text-muted">From the first sip to the last delicious bite.</p>
+
+      <div class="mt-6 grid gap-4 md:grid-cols-3">
+        <article class="flex flex-col rounded-lg border border-line bg-paper p-6">
+          <span class="text-[11px] font-bold">01</span>
+          <h3 class="mt-5 font-serif text-3xl font-medium leading-tight">The Grandmaster Brews</h3>
+          <p class="mt-4 text-sm leading-relaxed text-muted">Rich, thoughtful, and always a good move.</p>
+          <ul class="mt-6 space-y-3 text-sm">
+            <li>Espresso · Americano</li>
+            <li>Specialty lattes · Cold brew</li>
+          </ul>
+          <p class="mt-auto pt-8 text-[10px] font-bold uppercase tracking-wide">Pair with a fresh pastry</p>
+        </article>
+        <article class="flex flex-col rounded-lg border border-line bg-paper p-6">
+          <span class="text-[11px] font-bold">02</span>
+          <h3 class="mt-5 font-serif text-3xl font-medium leading-tight">The Bishop&apos;s Boards &amp; Melts</h3>
+          <p class="mt-4 text-sm leading-relaxed text-muted">Comfort food with a little extra character.</p>
+          <ul class="mt-6 space-y-3 text-sm">
+            <li>Artisanal grilled cheeses</li>
+            <li>Savory pastries · Cheese spreads</li>
+          </ul>
+          <p class="mt-auto pt-8 text-[10px] font-bold uppercase tracking-wide">Pair with your favourite brew</p>
+        </article>
+        <article class="flex flex-col rounded-lg border border-line bg-paper p-6">
+          <span class="text-[11px] font-bold">03</span>
+          <h3 class="mt-5 font-serif text-3xl font-medium leading-tight">Sweet Endings</h3>
+          <p class="mt-4 text-sm leading-relaxed text-muted">Because every good game deserves a sweet finish.</p>
+          <ul class="mt-6 space-y-3 text-sm">
+            <li>Fresh bakery favourites</li>
+            <li>Seasonal treats</li>
+          </ul>
+          <p class="mt-auto pt-8 text-[10px] font-bold uppercase tracking-wide">Pair with a slow afternoon</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Visit -->
+    <section id="visit" class="bg-mocha text-cream">
+      <div class="mx-auto flex max-w-6xl flex-col gap-12 px-6 py-16 md:flex-row md:items-center md:px-8 md:py-20">
+        <div class="flex-1">
+          <p class="text-[11px] font-bold uppercase tracking-wide">Your next move</p>
+          <h2 class="mt-5 font-serif text-4xl font-medium md:text-5xl">There&apos;s a seat for you.</h2>
+          <p class="mt-5 text-sm">Queen Street East, Cambridge, Ontario</p>
+          <h3 class="mt-6 font-serif text-3xl font-medium">Opening hours</h3>
+          <p class="mt-4 max-w-sm text-sm leading-relaxed text-cream/90">Our opening hours are being confirmed. Check back before planning your visit.</p>
+          <ul class="mt-4 flex gap-2 text-[11px] font-semibold">
+            <li>Free Wi-Fi</li><li aria-hidden="true">·</li><li>Dine-in</li><li aria-hidden="true">·</li><li>Takeout</li>
+          </ul>
+          <a href="https://www.google.com/maps/search/?api=1&query=Queen+St+E+Cambridge+ON" target="_blank" rel="noopener"
+             class="mt-6 inline-block rounded-sm border border-cream px-4 py-3 text-xs font-semibold hover:bg-cream hover:text-mocha">Get directions</a>
+        </div>
+        <div class="flex-1 rounded-lg bg-cream p-4 text-ink">
+          <p class="text-[11px] font-bold uppercase tracking-wide">Queen Street East · Cambridge</p>
+          <div class="mt-3 aspect-[16/9] overflow-hidden rounded bg-line">
+            <iframe title="Map of Queen Street East, Cambridge, Ontario" class="h-full w-full border-0" loading="lazy"
+                    src="https://maps.google.com/maps?q=Queen%20St%20E%20Cambridge%20ON&z=14&output=embed"></iframe>
+          </div>
+          <p class="mt-3 text-sm">Explore the neighbourhood with Get directions.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="border-t-4 border-cream bg-espresso text-cream">
+    <div class="mx-auto flex max-w-6xl flex-col gap-6 px-6 py-12 md:flex-row md:items-center md:justify-between md:px-8">
+      <p class="max-w-xs font-serif text-2xl font-medium leading-snug">Good coffee. Great company. Your move.</p>
+      <p class="text-[11px] font-semibold text-gold/80">Queen Street East, Cambridge, ON · Contact details coming soon</p>
+      <ul class="flex gap-5 text-[11px] font-semibold text-gold">
+        <li>Instagram (soon)</li>
+        <li>Facebook (soon)</li>
+      </ul>
+    </div>
+  </footer>
+</body>
+</html>
